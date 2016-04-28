@@ -1,0 +1,106 @@
+
+@font-face {
+ 	font-family: 'SingleMaltaRegular';
+ 	src: url('../fonts/singlemalta-webfont.eot');
+ 	src: url('../fonts/singlemalta-webfont.eot?#iefix') format('embedded-opentype'),
+ 	url('../fonts/singlemalta-webfont.woff') format('woff'),
+ 	url('../fonts/singlemalta-webfont.ttf') format('truetype'),
+ 	url('../fonts/singlemalta-webfont.svg#SingleMaltaRegular') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+ } 
+ input:focus{outline:none} 
+.wrap{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.header{
+	width: 80%;
+	height: 80px;
+	padding: 10px 20px;
+	font-family: 'SingleMaltaRegular';
+    font-size: 40px;
+    margin: 0 auto;
+}
+input{
+	font-family: 'SingleMaltaRegular';
+    background: #37393A;
+    color: #fff;
+    border-radius: 35%;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+}
+input:hover{
+	background: green;
+}
+input:disabled{
+	color: #ADA8A8;
+}
+input:disabled:hover{
+  background: #37393A;
+}
+.playerarea{
+	width: 100%;
+	height: 200px;
+}
+.playername{
+	font-family: 'SingleMaltaRegular';
+    font-size: 30px;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    text-align: center;
+    float: left;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #504545;
+}
+.cardarea{
+		display: flex;
+       	height:200px;
+       	flex-flow:row nowrap;
+       	justify-content:space-around;
+       	align-items:center;
+}
+.card {
+	width: 105px;
+	height: 150px;
+	background-size: 100% 100%;
+	position: relative;
+	font-family: '黑体';
+	font-size: 30px;
+	line-height: 150px;
+		
+		-webkit-transform: perspective(800px);
+		-ms-transform: perspective(800px);
+		-o-transform: perspective(800px);
+		transform: perspective(800px);
+}
+
+.card span {
+		position: absolute;
+		opacity: 1;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+.choosearea{
+	width: 100%;
+	height: 135px;
+}
+.choosearea h2{
+	padding: 10px 10px;
+	font-family: 'SingleMaltaRegular';
+	font-size: 40px;
+}
+#whowin{
+	font-size: 60px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(137, 212, 195)), to(rgb(107, 239, 7)));
+	 -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+

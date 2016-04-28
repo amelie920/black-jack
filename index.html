@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width",initial-scale=1,maximum-scale=1,minimum-scale=1,user-scale=1>
+	 <!-- 如果设置成yes则ipone会将数字设置成超链接  然后点击能够拨号 -->
+    <meta name="format-detective" content="telephone=no">
+    <!-- 强制用webkit渲染 -->
+    <mata name="X-UA-Competible" content="IE=edge chrome=1">
+	<title>Black Jack</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cssreset.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div>Black Jack</div>
+		</div>
+		<div class="playerarea">
+			<div class="playername computername">AI :</div>
+			<div class="cardarea " id="computer"><div class="card" style="background:url(img/cardback.jpg);background-size:100% 100%"></div><div class="card" style="background:url(img/cardback.jpg);background-size:100% 100%"></div><div class="card"></div><div class="card"></div><div class="card"></div></div>
+		</div>
+		<div class="playerarea">
+			<span class="playername username">YOU :</span>
+			<div class="cardarea " id="you"><div class="card" style="background:url(img/cardback.jpg);background-size:100% 100%"></div><div class="card" style="background:url(img/cardback.jpg);background-size:100% 100%"></div><div class="card"></div><div class="card"></div><div class="card"></div></div>
+		</div>
+		<div class="choosearea">
+			<h2 id="choosetext">Please Choose >.<</h2>
+			<input type="button" id="gamestart" value="开始">
+			<input type="button" id="addcard" value="加一张牌">
+            <input type="button" id="nomore" value="我不要了">
+ 		</div>
+ 		<div id="whowin"></div>
+	</div>
+</body>
+<script type="text/javascript" src="blackjack.js"></script>
+</html>
